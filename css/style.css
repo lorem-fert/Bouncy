@@ -1100,8 +1100,6 @@ canvas{
 }
 
 progress {
-	-moz-appearance: none; 
-	-webkit-appearance: none; 
 	width: 100%;
 	height: 10px;
 }
@@ -1332,13 +1330,32 @@ progress::-webkit-progress-value {
 .price4 {
 	font-size: 16pt;
 	background-color: #19BD9A;
-	color: white;
+	color: whitesmoke;
 	width: 229px;
 	height: 67px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	font-family: 'Nunito', sans-serif;
+	transition: 2s;
+}
+
+.price4:hover {
+	transition: 2s;
+	background-color: white;
+	border: 3px solid #18ffcd;
+}
+
+.price4 a {
+	color: whitesmoke;
+	text-decoration: none;
+	transition: 1.5s;
+}
+
+.price4:hover a{
+	color: #18ffcd;
+	transition: 1.5s;
+	font-weight: bold;
 }
 
 .price6 {
@@ -2412,5 +2429,12 @@ nav.podokno {
 
 	#gh, #ghh, #hg {
 		width: 77%;
+	}
+	.me, .py, .hp {
+		font-size: 8pt;
+	}
+
+	.mega_time {
+		margin-bottom: 50px;
 	}
 }
